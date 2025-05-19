@@ -30,7 +30,7 @@ function Header() {
 
       <header>
         <nav>
-          <Link to="/">Home</Link>
+          <Link to="/">Home 스윗 홈</Link>
           <Link to="/login">Login</Link>
           <Link to="/join">Join</Link>
         </nav>
