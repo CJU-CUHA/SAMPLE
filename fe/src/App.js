@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/logon" element={<Login />} />
         <Route path="/join" element={<Join />} />
         <Route path="/dev" element={<Dev />} />
       </Routes>
