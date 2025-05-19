@@ -1,40 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <>
-      <style>{`
-        header {
-          background-color: #222;
-          padding: 1rem;
-          color: white;
-        }
-
-        nav {
-          display: flex;
-          justify-content: center;
-          gap: 2rem;
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-        }
-
-        a:hover {
-          color: #61dafb;
-        }
-      `}</style>
-
-      <header>
-        <nav>
-          <Link to="/">Home 스윗 홈</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/join">Join</Link>
-        </nav>
-      </header>
+      <div className="App">
+        <header class="main-banner">
+          <div class="logo">
+            <img src="./cuha.png" alt="logo"></img>
+          </div>
+          <nav class="nav-menu">
+            <button class="cuha-button">CUHA</button>
+            <span>CTF Time</span>
+            <div class="divider"></div>
+            <span>WAR GAME</span>
+            <div class="divider"></div>
+            <span>CUHA WIKI</span>
+            <div class="divider"></div>
+            <span>MINECRAFT</span>
+            <div class="divider"></div>
+            <span class="click-me">Click Me</span>
+          </nav>
+          <div class="auth">
+            <span class="login">로그인</span>
+            <span class="sep">|</span>
+            <span class="signup">회원가입</span>
+          </div>
+        </header>
+      </div>
     </>
   );
 }

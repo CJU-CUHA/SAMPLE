@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import Login from './pages/Login';
 import Join from './pages/Join';
 import Dev from './pages/Dev';
+import './App.css';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/logon" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/join" element={<Join />} />
         <Route path="/dev" element={<Dev />} />
       </Routes>
